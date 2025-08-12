@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InstaMock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- 상단바(간단) -->
+  <header class="topbar">
+    <div class="brand">
+      <button class="logo-btn">
+        <img src="assets/icons/logo.svg" alt="인스타그램" class="logo" />
+      </button>
+    </div>
+    <div class="top-actions">
+      <button class="top-action-btn"><img src="assets/icons/heart.svg" alt="알림" class="icon" /></button>
+      <button class="top-action-btn"><img src="assets/icons/share.svg" alt="메시지" class="icon" /></button>
+      <button class="top-action-btn"><img src="assets/icons/plus.svg" alt="만들기" class="icon" /></button>
+    </div>
+  </header>
+
+  <div class="page">
+    <!-- 좌측: 사이드 아이콘 메뉴 (데스크탑/태블릿에서 노출) -->
+    <aside class="sidebar">
+      <nav class="side-nav">
+        <a class="nav-item active"><img src="assets/icons/home.svg" class="icon" alt="" /><span>홈</span></a>
+        <a class="nav-item"><img src="assets/icons/search.svg" class="icon" alt="" /><span>검색</span></a>
+        <a class="nav-item"><img src="assets/icons/compass.svg" class="icon" alt="" /><span>탐색 탭</span></a>
+        <a class="nav-item"><img src="assets/icons/reels.svg" class="icon" alt="" /><span>릴스</span></a>
+        <a class="nav-item"><img src="assets/icons/share.svg" class="icon" alt="" /><span>메시지</span></a>
+        <a class="nav-item"><img src="assets/icons/heart.svg" class="icon" alt="" /><span>알림</span></a>
+        <a class="nav-item"><img src="assets/icons/plus.svg" class="icon" alt="" /><span>만들기</span></a>
+        <a class="nav-item">
+          <img src="assets/images/avatar.png" class="avatar-24" alt="프로필" />
+          <span>프로필</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- 가운데: 피드 -->
+    <main class="feed">
+      <!-- 스토리 -->
+      <section class="stories">
+        <!-- 같은 아이콘/아바타 반복 표시 -->
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="종태" class="story-avatar" />
+          </button>
+          <span class="story-name">종태</span>
+        </div>
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="종대" class="story-avatar" />
+          </button>
+          <span class="story-name">종대</span>
+        </div>
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="종순" class="story-avatar" />
+          </button>
+          <span class="story-name">종순</span>
+        </div>
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="인순" class="story-avatar" />
+          </button>
+          <span class="story-name">인순</span>
+        </div>
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="김선" class="story-avatar" />
+          </button>
+          <span class="story-name">김선</span>
+        </div>
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="볼팡" class="story-avatar" />
+          </button>
+          <span class="story-name">볼팡</span>
+        </div>
+        <div class="story">
+          <button class="story-avatar-btn">
+            <img src="assets/images/avatar.png" alt="지환" class="story-avatar" />
+          </button>
+          <span class="story-name">지환</span>
+        </div>
+        <!-- 필요만큼 복제 -->
+      </section>
+
+      <!-- 게시물 카드 샘플 (여러 개 렌더) -->
+      <article class="card">
+        <header class="card-head">
+          <img src="assets/images/avatar.png" alt="종태" class="avatar-32" />
+          <strong>종태</strong>
+          <button class="more"><img src="assets/icons/more.svg" class="icon" alt="더보기" /></button>
+        </header>
+
+        <img src="assets/images/picture.jpeg" class="card-img" alt="게시물 이미지" loading="lazy" />
+
+        <div class="card-actions">
+          <button aria-label="좋아요"><img src="assets/icons/heart.svg" class="icon" alt="" /></button>
+          <button aria-label="댓글"><img src="assets/icons/comment.svg" class="icon" alt="" /></button>
+          <button aria-label="공유"><img src="assets/icons/share.svg" class="icon" alt="" /></button>
+          <button class="save" aria-label="저장"><img src="assets/icons/bookmark.svg" class="icon" alt="" /></button>
+        </div>
+
+        <div class="card-meta">
+          <div class="likes"><b>종선</b>님 외 33명이 좋아합니다</div>
+          <div class="caption"><b>종태</b> 게시물 설명입니다</div>
+          <div class="time">30분 전</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <img src="assets/images/avatar.png" alt="지환" class="avatar-32" />
+          <strong>지환</strong>
+          <button class="more"><img src="assets/icons/more.svg" class="icon" alt="더보기" /></button>
+        </header>
+
+        <img src="assets/images/picture.jpeg" class="card-img" alt="게시물 이미지" loading="lazy" />
+
+        <div class="card-actions">
+          <button aria-label="좋아요"><img src="assets/icons/heart.svg" class="icon" alt="" /></button>
+          <button aria-label="댓글"><img src="assets/icons/comment.svg" class="icon" alt="" /></button>
+          <button aria-label="공유"><img src="assets/icons/share.svg" class="icon" alt="" /></button>
+          <button class="save" aria-label="저장"><img src="assets/icons/bookmark.svg" class="icon" alt="" /></button>
+        </div>
+
+        <div class="card-meta">
+          <div class="likes"><b>종선</b>님 외 22명이 좋아합니다</div>
+          <div class="caption"><b>지환</b> 게시물 설명입니다</div>
+          <div class="time">1시간 전</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <img src="assets/images/avatar.png" alt="볼팡" class="avatar-32" />
+          <strong>볼팡</strong>
+          <button class="more"><img src="assets/icons/more.svg" class="icon" alt="더보기" /></button>
+        </header>
+
+        <img src="assets/images/picture.jpeg" class="card-img" alt="게시물 이미지" loading="lazy" />
+
+        <div class="card-actions">
+          <button aria-label="좋아요"><img src="assets/icons/heart.svg" class="icon" alt="" /></button>
+          <button aria-label="댓글"><img src="assets/icons/comment.svg" class="icon" alt="" /></button>
+          <button aria-label="공유"><img src="assets/icons/share.svg" class="icon" alt="" /></button>
+          <button class="save" aria-label="저장"><img src="assets/icons/bookmark.svg" class="icon" alt="" /></button>
+        </div>
+
+        <div class="card-meta">
+          <div class="likes"><b>종선</b>님 외 15명이 좋아합니다</div>
+          <div class="caption"><b>볼팡</b> 게시물 설명입니다</div>
+          <div class="time">3시간 전</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <img src="assets/images/avatar.png" alt="김선" class="avatar-32" />
+          <strong>김선</strong>
+          <button class="more"><img src="assets/icons/more.svg" class="icon" alt="더보기" /></button>
+        </header>
+
+        <img src="assets/images/picture.jpeg" class="card-img" alt="게시물 이미지" loading="lazy" />
+
+        <div class="card-actions">
+          <button aria-label="좋아요"><img src="assets/icons/heart.svg" class="icon" alt="" /></button>
+          <button aria-label="댓글"><img src="assets/icons/comment.svg" class="icon" alt="" /></button>
+          <button aria-label="공유"><img src="assets/icons/share.svg" class="icon" alt="" /></button>
+          <button class="save" aria-label="저장"><img src="assets/icons/bookmark.svg" class="icon" alt="" /></button>
+        </div>
+
+        <div class="card-meta">
+          <div class="likes"><b>종선</b>님 외 10명이 좋아합니다</div>
+          <div class="caption"><b>김선</b> 게시물 설명입니다</div>
+          <div class="time">6시간 전</div>
+        </div>
+      </article>
+    </main>
+
+    <!-- 우측: 추천/프로필 (텍스트는 자유 스타일) -->
+    <aside class="right">
+      <div class="me">
+        <img src="assets/images/avatar.png" class="avatar-40" alt="종태" />
+        <div>
+          <div class="nick">종태</div>
+          <div class="sub">jongtae</div>
+        </div>
+        <button class="switch">전환</button>
+      </div>
+
+      <div class="suggestions">
+        <div class="head">
+          <div class="title">회원님을 위한 추천</div>
+          <button class="more">더 보기</button>
+        </div>
+
+        <div class="sug">
+          <div class="who">
+            <img src="assets/images/avatar.png" class="avatar-32" alt="라임" />
+            <div>
+              <div class="name">라임</div>
+              <div class="why">ctj님 외 1명이 팔로우합니다</div>
+            </div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+
+        <div class="sug">
+          <div class="who">
+            <img src="assets/images/avatar.png" class="avatar-32" alt="코코" />
+            <div>
+              <div class="name">코코</div>
+              <div class="why">plas6님 외 3명이 팔로우합니다</div>
+            </div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+
+        <div class="sug">
+          <div class="who">
+            <img src="assets/images/avatar.png" class="avatar-32" alt="지니" />
+            <div>
+              <div class="name">지니</div>
+              <div class="why">akao_11님 외 5명이 팔로우합니다</div>
+            </div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+
+        <div class="sug">
+          <div class="who">
+            <img src="assets/images/avatar.png" class="avatar-32" alt="아폴로" />
+            <div>
+              <div class="name">아폴로</div>
+              <div class="why">casdd_11.16님 외 3명이 팔로우합니다</div>
+            </div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+
+        <div class="sug">
+          <div class="who">
+            <img src="assets/images/avatar.png" class="avatar-32" alt="별하" />
+            <div>
+              <div class="name">별하</div>
+              <div class="why">ctj.16님 외 7명이 팔로우합니다</div>
+            </div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+      </div>
+
+      <div class="right-footer">
+        <div class="links">
+          <a href="#">소개</a>
+          <a href="#">도움말</a>
+          <a href="#">홍보 센터</a>
+          <a href="#">API</a>
+          <a href="#">채용 정보</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">약관</a>
+          <a href="#">위치</a>
+          <a href="#">언어</a>
+          <a href="#">Meta Verified</a>
+        </div>
+        <div class="copy">© 2025 INSTAGRAM FROM META</div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 모바일 전용 하단 탭바 (좌측 메뉴가 아래로 이동) -->
+  <nav class="bottom-tab">
+    <button class="tab-item active">
+      <img src="assets/icons/home.svg" class="icon" alt="홈" />
+    </button>
+    <button class="tab-item">
+      <img src="assets/icons/search.svg" class="icon" alt="검색" />
+    </button>
+    <button class="tab-item">
+      <img src="assets/icons/reels.svg" class="icon" alt="릴스" />
+    </button>
+    <button class="tab-item">
+      <img src="assets/icons/plus.svg" class="icon" alt="만들기" />
+    </button>
+    <button class="tab-item profile-btn">
+      <img src="assets/images/avatar.png" class="avatar-24" alt="프로필" />
+    </button>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
