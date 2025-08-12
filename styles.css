@@ -27,14 +27,14 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,'No
 
 /* 페이지 3열 그리드 */
 .page{
-  max-width:1200px; margin:0 auto; padding:16px 16px 88px; /* 모바일 탭바 공간 고려 */
+  max-width:1200px; margin:0 auto; padding:16px 16px 88px; /* 모바일 탭바 공간 고려 해서*/
   display:grid; gap:24px;
   grid-template-columns: 240px 1fr 320px;  /* 좌/중/우 */
 }
 
 /* 좌측 사이드바 */
 .side-nav{display:flex; flex-direction:column; gap:6px}
-/* 데스크탑에서 사이드바 고정 */
+/* 데스크탑에서 사이드바 고정함 */
 .sidebar{position:sticky; top:72px; align-self:start}
 .nav-item{display:flex; align-items:center; gap:12px; padding:10px 12px; border-radius:10px; text-decoration:none; color:#111}
 .nav-item:hover{background:#f7f7f7}
@@ -48,6 +48,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,'No
 .feed{max-width:680px; width:100%}
 .stories{display:flex; gap:14px; overflow-x:auto; padding:10px 4px 16px; border-bottom:1px solid #eee}
 .story-avatar{width:58px; height:58px; border-radius:50%; outline:2px solid #ff7a00; object-fit:cover}
+
 .story-name{font-size:12px; display:block; text-align:center; margin-top:6px}
 
 /* 카드 */
@@ -94,13 +95,13 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,'No
   padding:0;
 }
 
-/* 우측 하단 링크/카피 */
+/* 우측 하단 부분*/
 .right-footer{margin-top:20px; color:#888}
 .right-footer .links{display:flex; flex-wrap:wrap; gap:6px}
 .right-footer .links a{color:#bbb; text-decoration:none; font-size:12px}
 .right-footer .copy{margin-top:10px; font-size:12px}
 
-/* 모바일 하단 탭바 (기본 숨김) */
+/* 모바일 하단 탭바 */
 .bottom-tab{
   display:none;
   position:fixed; 
@@ -132,13 +133,13 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,'No
   height: 24px;
 }
 
-/* 브레이크포인트: 태블릿 - 우측 숨김, 2열 */
+/* 태블릿 부분 */
 @media (max-width: 1024px){
   .page{grid-template-columns: 220px 1fr}
   .right{display:none}
 }
 
-/* 브레이크포인트: 모바일 - 1열 + 좌측 숨김 + 바텀탭 표시 */
+/* 모바일 부분 추가 */
 @media (max-width: 768px){
   .page{grid-template-columns: 1fr}
   .sidebar{display:none}
@@ -146,7 +147,7 @@ body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,'No
   .bottom-tab .tab-item{padding:8px}
 }
 
-/* 스토리 아바타 버튼 스타일 */
+/* 스토리 아바타 버튼 스타일 추가 */
 .story-avatar-btn {
   appearance: none;
   -webkit-appearance: none;
